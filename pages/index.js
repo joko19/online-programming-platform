@@ -1,4 +1,8 @@
 function Index() {
+  const isProd = process.env.NODE_ENV === 'production'
+  console.log(process.env.NODE_ENV)
+  console.log(process.env.DEPLOY_TARGET)
+  console.log(isProd)
   return (
     <div>
       <h1 className="text-red-500">Index</h1>
