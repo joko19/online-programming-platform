@@ -1,10 +1,11 @@
 const isProd = process.env.NODE_ENV === 'production'
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/online-programming-platform/' : '',
-  basePath: isProd ? '/online-programming-platform/' : ''
+  assetPrefix: ghPages ? '/online-programming-platform/' : '',
+  basePath: ghPages ? '/online-programming-platform/' : ''
 }
 
 module.exports = {
