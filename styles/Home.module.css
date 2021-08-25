@@ -113,6 +113,11 @@
   margin-left: 0.5rem;
 }
 
+.onlinecompiler {
+  height: calc(100vh - 50px);
+}
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
