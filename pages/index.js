@@ -5,14 +5,17 @@ import Image from 'next/image'
 function Index() {
   const data = [
     {
+      id:0,
       title: 'Pendahuluan',
       cover: 'https://thumbs.dreamstime.com/b/introduction-concept-word-cork-board-77226561.jpg'
     },
     {
+      id:1,
       title: 'Algoritma dan Flowchart',
       cover: 'https://static7.depositphotos.com/1194063/684/i/600/depositphotos_6843383-stock-photo-hand-draws-flow-chart-on.jpg'
     },
     {
+      id:2,
       title: 'Mengenal Python',
       cover: 'https://remakelearning.org/wp-content/uploads/2020/01/105.jpg'
     },
@@ -37,7 +40,7 @@ function Index() {
       <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">
         {data.map((item) => {
           return (
-            <Card data={item} />
+            <Card key={item.id} data={item} />
           )
         })}
       </div>
