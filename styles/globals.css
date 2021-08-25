@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+.onlinecompiler {
+  height: calc(100vh - 50px);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
