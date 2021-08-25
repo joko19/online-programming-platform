@@ -1,5 +1,6 @@
 import Header from "../component/Header"
 import Card from "../component/Card"
+import Image from 'next/image'
 
 function Index() {
   const data = [
@@ -30,7 +31,7 @@ function Index() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full h-96 md:w-1/2">
-          <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="apple watch photo" />
+          <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://content.techgig.com/photo/80044166/everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg" />
         </div>
       </div>
       <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">

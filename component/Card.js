@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function Card(props) {
   return (
     <div className="bg-gray-100">
