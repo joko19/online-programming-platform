@@ -14,22 +14,22 @@ function Register() {
             <p className="text-center text-3xl">Join Us.</p>
             <form className="flex flex-col pt-3 md:pt-8" onsubmit="event.preventDefault();">
               <div className="flex flex-col pt-4">
-                <label for="name" className="text-lg">Name</label>
+                <label htmlFor="name" className="text-lg">Name</label>
                 <input type="text" id="name" placeholder="John Smith" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
 
               <div className="flex flex-col pt-4">
-                <label for="email" className="text-lg">Email</label>
+                <label htmlFor="email" className="text-lg">Email</label>
                 <input type="email" id="email" placeholder="your@email.com" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
 
               <div className="flex flex-col pt-4">
-                <label for="password" className="text-lg">Password</label>
+                <label htmlFor="password" className="text-lg">Password</label>
                 <input type="password" id="password" placeholder="Password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
 
               <div className="flex flex-col pt-4">
-                <label for="confirm-password" className="text-lg">Confirm Password</label>
+                <label htmlFor="confirm-password" className="text-lg">Confirm Password</label>
                 <input type="password" id="confirm-password" placeholder="Password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
 

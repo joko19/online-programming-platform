@@ -31,7 +31,7 @@ function Index() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full h-96 md:w-1/2">
-          <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://content.techgig.com/photo/80044166/everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg" />
+          <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://content.techgig.com/photo/80044166/everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg" alt="header"/>
         </div>
       </div>
       <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">
