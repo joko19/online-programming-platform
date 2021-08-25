@@ -1,40 +1,46 @@
+import Header from "../component/Header"
+import Card from "../component/Card"
+
 function Index() {
-  const isProd = process.env.NODE_ENV === 'production'
-  console.log(process.env.NODE_ENV)
-  console.log(process.env.DEPLOY_TARGET)
-  console.log(isProd)
+  const data = [
+    {
+      title: 'Pendahuluan',
+      cover: 'https://thumbs.dreamstime.com/b/introduction-concept-word-cork-board-77226561.jpg'
+    },
+    {
+      title: 'Algoritma dan Flowchart',
+      cover: 'https://static7.depositphotos.com/1194063/684/i/600/depositphotos_6843383-stock-photo-hand-draws-flow-chart-on.jpg'
+    },
+    {
+      title: 'Mengenal Python',
+      cover: 'https://remakelearning.org/wp-content/uploads/2020/01/105.jpg'
+    },
+  ]
   return (
-    <div>
-      <h1 className="text-red-500">Index</h1>
-      <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block text-indigo-600">
-            Start your free trial today.
-          </span>
-        </h2>
-        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-            >
-              Get started
-            </a>
-          </div>
-          <div className="ml-3 inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
-            >
-              Learn more
-            </a>
+    <>
+      <Header />
+      <div class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
+        <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
+          <div class="max-w-lg md:mx-12 md:order-2">
+            <h1 class="text-3xl font-medium tracking-wide text-gray-800 dark:text-white md:text-4xl">NiceRoom</h1>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">Media Pembelajaran yang dibuat untuk siswa siswi SMK Negeri 1 Gresik sebagai penunjang mata pelajaran Pemrograman Dasar</p>
+            <div class="mt-6">
+              <a href="#" class="block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md md:inline hover:bg-blue-400">Download from App Store</a>
+            </div>
           </div>
         </div>
+        <div class="flex items-center justify-center w-full h-96 md:w-1/2">
+          <img class="object-cover w-full h-full max-w-2xl rounded-md" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="apple watch photo" />
+        </div>
       </div>
-    </div>
-    </div>
+      <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">
+        {data.map((item) => {
+          return (
+            <Card data={item} />
+          )
+        })}
+      </div>
+    </>
   )
 }
 

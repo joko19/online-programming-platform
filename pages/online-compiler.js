@@ -1,7 +1,10 @@
-function OnlineCompiler(){
-  return(
+import Header from "../component/Header"
+
+function OnlineCompiler() {
+  return (
     <>
-      <h2>Online Compiler</h2>
+      <Header />
+      <iframe className="online-compiler" src="https://trinket.io/embed/python/351465970b" width="100%" frameBorder="0" marginWidth="0" marginHeight="0" allowFullScreen></iframe>
     </>
   )
 }
