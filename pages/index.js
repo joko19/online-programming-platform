@@ -32,7 +32,7 @@ function Index() {
             <h1 className="text-3xl font-medium tracking-wide text-gray-800 dark:text-white md:text-4xl">NiceRoom</h1>
             <p className="mt-4 text-gray-600 dark:text-gray-300">Media Pembelajaran yang dibuat untuk siswa siswi SMK Negeri 1 Cerme Gresik sebagai penunjang mata pelajaran Pemrograman Dasar</p>
             <div className="mt-6">
-              <a href="#" className="block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md md:inline hover:bg-blue-400">Download</a>
+              <a href="https://github.com/joko19/NiceRoomApp/releases/download/v1.0/NiceRoom.apk" className="block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md md:inline hover:bg-blue-400">Download</a>
             </div>
           </div>
         </div>
@@ -50,5 +50,6 @@ function Index() {
     </>
   )
 }
+
 
 export default Index
