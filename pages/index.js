@@ -40,6 +40,7 @@ function Index() {
           <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://content.techgig.com/photo/80044166/everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg" alt="header" />
         </div>
       </div>
+        <a href="https://github.com/joko19/online-programming-platform/tree/main/pages/pdf">Materi</a>
       <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">
         {data.map((item) => {
           return (
