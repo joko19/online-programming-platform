@@ -18,6 +18,9 @@ function Header() {
             <Link href="/">
               <a className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">home</a>
             </Link>
+            <Link href="/feed">
+              <a className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Feed</a>
+            </Link>
             <Link href="/online-compiler">
               <a className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Online Compiler</a>
             </Link>
