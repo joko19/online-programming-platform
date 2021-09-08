@@ -48,9 +48,9 @@ class PostComment extends React.Component {
     // this.loadCountLike();
   };
 
-  componentWillReceiveProps() {
-    this.loadCoverProfile();
-  }
+  // componentWillReceiveProps() {
+  //   this.loadCoverProfile();
+  // }
 
   handleLike = async () => {
     const data = {

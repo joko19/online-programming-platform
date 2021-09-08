@@ -425,7 +425,7 @@ class ItemPost extends React.Component {
                   autoComplete="off"
                 />
               </form>
-              {this.state.newComment.map((item) => (
+              {/* {this.state.newComment.map((item) => (
                 <PostComment
                   username={item.user}
                   comment={item.comment}
@@ -441,7 +441,7 @@ class ItemPost extends React.Component {
                   timestamp={item.timestamp}
                   goUser={this.handleUserDetail}
                 />
-              ))}
+              ))} */}
             </Typography>
           </AccordionDetails>
           <p
