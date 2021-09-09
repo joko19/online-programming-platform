@@ -22,6 +22,19 @@ function Index() {
       cover: 'https://remakelearning.org/wp-content/uploads/2020/01/105.jpg',
       link: 'https://joko19.github.io/materi/pengenalan-python/presentation.html'
     },
+    {
+      id: 3,
+      title: 'Pertemuan 3',
+      cover: '/img/sintaks.png',
+      link: '/read/AturanPenulisan'
+    },
+    {
+      id: 3,
+      title: 'Pertemuan 4',
+      cover: '/img/tipeData.png',
+      link: '/read/TipeData'
+    },
+    
   ]
   return (
     <>
@@ -40,7 +53,6 @@ function Index() {
           <img className="object-cover w-screen md:w-full h-full max-w-2xl rounded-md" src="https://content.techgig.com/photo/80044166/everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg" alt="header" />
         </div>
       </div>
-      <a href="https://github.com/joko19/online-programming-platform/tree/main/pages/pdf">Materi</a>
       <div className="p-10 grid md:grid-cols-4  gap-4 bg-gray-100">
         {data.map((item) => {
           return (
