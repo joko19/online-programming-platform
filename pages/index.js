@@ -26,13 +26,13 @@ function Index() {
       id: 3,
       title: 'Pertemuan 3',
       cover: '/img/sintaks.png',
-      link: '/read/AturanPenulisan'
+      link: 'read/AturanPenulisan'
     },
     {
       id: 3,
       title: 'Pertemuan 4',
       cover: '/img/tipeData.png',
-      link: '/read/TipeData'
+      link: 'read/TipeData'
     },
     
   ]
