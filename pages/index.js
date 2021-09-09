@@ -25,14 +25,14 @@ function Index() {
     {
       id: 3,
       title: 'Pertemuan 3',
-      cover: '/img/sintaks.png',
-      link: 'read/AturanPenulisan'
+      cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/sintaks.png',
+      link: 'AturanPenulisan'
     },
     {
       id: 3,
       title: 'Pertemuan 4',
-      cover: '/img/tipeData.png',
-      link: 'read/TipeData'
+      cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
+      link: 'TipeData'
     },
     
   ]
