@@ -23,21 +23,18 @@ function Index() {
       title: 'Mengenal Python',
       cover: 'https://remakelearning.org/wp-content/uploads/2020/01/105.jpg',
       link: 'https://joko19.github.io/materi/pengenalan-python/presentation.html'
-    }
-
-  ]
-  const pdf = [
-    {
-      id: 1,
-      title: 'Pertemuan 3',
-      cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/sintaks.png',
-      link: '/aturan-penulisan'
     },
     {
-      id: 2,
+      id: 3,
+      title: 'Pertemuan 3',
+      cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/sintaks.png',
+      link: 'https://drive.google.com/file/d/1mWUcxGrcRkDmVNtlmtdeXaoknjPk_DeE/view?usp=sharing'
+    },
+    {
+      id: 4,
       title: 'Pertemuan 4',
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
-      link: '/tipe-data'
+      link: 'https://drive.google.com/file/d/19h-sSkefRACTBhFgtANwRRSj3prCsP-0/view?usp=sharing'
     },
 
   ]
@@ -62,11 +59,6 @@ function Index() {
         {data.map((item) => {
           return (
             <Card key={item.id} data={item} />
-          )
-        })}
-        {pdf.map((item) => {
-          return (
-            <Card2 key={item.id} data={item} />
           )
         })}
       </div>
