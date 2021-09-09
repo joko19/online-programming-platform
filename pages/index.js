@@ -1,6 +1,8 @@
 import Header from "../components/Header"
 import Card from "../components/Card"
+import Card2 from "../components/Card2"
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Index() {
   const data = [
@@ -21,20 +23,23 @@ function Index() {
       title: 'Mengenal Python',
       cover: 'https://remakelearning.org/wp-content/uploads/2020/01/105.jpg',
       link: 'https://joko19.github.io/materi/pengenalan-python/presentation.html'
-    },
+    }
+
+  ]
+  const pdf = [
     {
-      id: 3,
+      id: 1,
       title: 'Pertemuan 3',
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/sintaks.png',
       link: 'AturanPenulisan'
     },
     {
-      id: 3,
+      id: 2,
       title: 'Pertemuan 4',
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
       link: 'TipeData'
     },
-    
+
   ]
   return (
     <>
@@ -57,6 +62,11 @@ function Index() {
         {data.map((item) => {
           return (
             <Card key={item.id} data={item} />
+          )
+        })}
+        {pdf.map((item) => {
+          return (
+            <Card2 key={item.id} data={item} />
           )
         })}
       </div>
