@@ -31,13 +31,13 @@ function Index() {
       id: 1,
       title: 'Pertemuan 3',
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/sintaks.png',
-      link: 'AturanPenulisan'
+      link: '/aturan-penulisan'
     },
     {
       id: 2,
       title: 'Pertemuan 4',
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
-      link: 'TipeData'
+      link: '/tipe-data'
     },
 
   ]
