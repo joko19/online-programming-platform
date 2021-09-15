@@ -36,7 +36,13 @@ function Index() {
       cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
       link: 'https://drive.google.com/file/d/19h-sSkefRACTBhFgtANwRRSj3prCsP-0/view?usp=sharing'
     },
-
+    {
+      id: 5,
+      title: 'Pertemuan 4',
+      cover: 'https://raw.githubusercontent.com/joko19/online-programming-platform/gh-pages/img/tipeData.png',
+      link: 'https://drive.google.com/file/d/19h-sSkefRACTBhFgtANwRRSj3prCsP-0/view?usp=sharing'
+    },
+    
   ]
   return (
     <>
