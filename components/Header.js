@@ -12,6 +12,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import Home from "@material-ui/icons/Home";
 import CodeIcon from '@material-ui/icons/Code';
 import ViewCarouselIcon from '@material-ui/icons/ViewCarousel';
+import ViewQuiltIcon from '@material-ui/icons/ViewQuilt';
+
 
 function Header() {
 
@@ -48,6 +50,9 @@ function Header() {
               <Link href="/online-compiler">
                 <a className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Online Compiler</a>
               </Link>
+              <Link href="/blocks">
+                <a className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Blocks</a>
+              </Link>
             </div>
           </div>
         </nav>
@@ -63,6 +68,9 @@ function Header() {
           </Link> */}
           <Link href="/online-compiler">
             <BottomNavigationAction label="Coding" value="Coding" icon={<CodeIcon />} />
+          </Link>
+          <Link href="/blocks">
+            <BottomNavigationAction label="Block" value="Block" icon={<ViewQuiltIcon />} />
           </Link>
           {/* <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} /> */}
       </BottomNavigation>
