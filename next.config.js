@@ -16,7 +16,7 @@ module.exports = withBundleAnalyzer({
         // destination: '/067dd719a912471ea9a3ac10710e7fdf',
         // don't set permanent to true because it will get cached by browser
         // while developing on localhost
-        permanent: false,
+        permanent: true,
         reactStrictMode: true,
         assetPrefix: isProd ? '/online-programming-platform' : '',
         basePath: isProd ? '/online-programming-platform' : '',
