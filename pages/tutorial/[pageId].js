@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Head from 'next/head'
 
 import { getPageTitle, getAllPagesInSpace } from 'notion-utils'
@@ -10,8 +10,10 @@ const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
 const notion = new NotionAPI()
 
 export const getStaticProps = async (context) => {
-  const pageId = context.params.pageId as string
+  const pageId = context.params.pageId
   const recordMap = await notion.getPage(pageId)
+  // const recordMap = await notion.getPage('067dd719a912471ea9a3ac10710e7fdf')
+
 
   return {
     props: {
@@ -45,7 +47,8 @@ export async function getStaticPaths() {
       traverseCollections: false
     }
   )
-
+  console.log(pages)
+console.log("hahah")
   const paths = Object.keys(pages).map((pageId) => `/${pageId}`)
   // const paths = Object.keys(pages).map((pageId) => ({params: { pageId: `/${pageId}` }}) )
   console.log(paths)
@@ -58,7 +61,7 @@ export async function getStaticPaths() {
   // }
   return {
     paths,
-    fallback: true
+    fallback: false
   }
 }
 
@@ -69,6 +72,14 @@ export default function NotionPage({ recordMap }) {
 
   const title = getPageTitle(recordMap)
   console.log(title, recordMap)
+
+  // useEffect(() => {
+  //   effect
+  //   return () => {
+  //     cleanup
+  //   }
+  // }, [input])
+
 
   return (
     <>
