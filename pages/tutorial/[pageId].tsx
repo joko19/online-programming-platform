@@ -48,8 +48,8 @@ export async function getStaticPaths() {
   const paths = Object.keys(pages).map((pageId) => `/${pageId}`)
 
   return {
-    paths,
-    fallback: true
+    paths: [],
+    fallback: false
   }
 }
 
