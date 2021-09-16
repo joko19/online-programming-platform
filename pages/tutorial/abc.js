@@ -13,18 +13,18 @@ function Tutorial({ recordMap }) {
 }
 
 
-export const getStaticProps = async (context) => {
-  const pageId = context.params.pageId
-  const recordMap = await notion.getPage(pageId)
-  console.log(pageId)
-  return { props: { recordMap } }
-}
-
-// export const getServerSideProps = async () => {
-
-//   const recordMap = await notion.getPage('067dd719a912471ea9a3ac10710e7fdf')
-
+// export const getStaticProps = async (context) => {
+//   const pageId = context.params.pageId
+//   const recordMap = await notion.getPage(pageId)
+//   console.log(pageId)
 //   return { props: { recordMap } }
 // }
+
+export const getServerSideProps = async () => {
+
+  const recordMap = await notion.getPage('067dd719a912471ea9a3ac10710e7fdf')
+
+  return { props: { recordMap } }
+}
 
 export default Tutorial
