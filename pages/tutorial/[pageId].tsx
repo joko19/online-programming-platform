@@ -29,7 +29,8 @@ export async function getStaticPaths() {
     }
   }
 
-  const rootNotionPageId = '067dd719a912471ea9a3ac10710e7fdf'
+
+  const rootNotionPageId = '067dd719a912471ea9a3ac10710e7fd'
   const rootNotionSpaceId = 'fde5ac74-eea3-4527-8f00-4482710e1af3'
 
   // This crawls all public pages starting from the given root page in order
@@ -46,7 +47,15 @@ export async function getStaticPaths() {
   )
 
   const paths = Object.keys(pages).map((pageId) => `/${pageId}`)
-
+  // const paths = Object.keys(pages).map((pageId) => ({params: { pageId: `/${pageId}` }}) )
+  console.log(paths)
+  const newPaths = []
+  
+  newPaths.push(paths)
+  console.log(newPaths)
+  // for (let slug of paths) {
+  //   newPaths.push({ params: { ...slug } });
+  // }
   return {
     paths,
     fallback: true
